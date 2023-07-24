@@ -26,3 +26,13 @@ Simple React Snippets
 v1.2.7
 Burke Holland
 ++++++++++++++++++++++++++
+
+https://developer.mozilla.org
+https://caniuse.com
+https://alistapart.com/article/responsive-web-design/
+
+https://whatwg.org/
+
+https://react.dev/
+
+
