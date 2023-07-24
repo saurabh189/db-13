@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* decendent combinator */
+        div span{
+            background-color: yellowgreen;
+        }
+        /* adjecent sibling combinator */
+       /*  
+        ul + header{
+            border: 2px solid red;
+        } 
+        */
+        /* general sibling combinator */
+        ul ~ header{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+   
+    <header>
+        Second P
+        <hr>
+        Lorem ipsum dolor sit <span>amet</span> consectetur adipisicing elit. Expedita excepturi doloremque facere odio sed reprehenderit, et sapiente porro obcaecati dicta ipsam repellat, asperiores possimus in voluptates rerum nulla optio assumenda?
+    </header>
+
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+        <li>List Item 5</li>
+    </ul>
+
+    <header>
+        First P
+        <hr>
+        Lorem ipsum dolor sit <span>amet</span> consectetur adipisicing elit. Expedita excepturi doloremque facere odio sed reprehenderit, et sapiente porro obcaecati dicta ipsam repellat, asperiores possimus in voluptates rerum nulla optio assumenda?
+    </header>
+    <header>
+        Third P
+        <hr>
+        Lorem ipsum dolor sit <span>amet</span> consectetur adipisicing elit. Expedita excepturi doloremque facere odio sed reprehenderit, et sapiente porro obcaecati dicta ipsam repellat, asperiores possimus in voluptates rerum nulla optio assumenda?
+    </header>
+    <div>
+        DIV
+        <hr>
+        Lorem, ipsum dolor sit <span>amet</span> consectetur adipisicing elit. Eum expedita voluptates obcaecati, enim quis harum iusto temporibus? Voluptate doloremque possimus rem amet exercitationem quia? Minus nulla asperiores sed accusantium fuga?
+    </div>
+    <section>
+        SECTION
+        <hr>
+        Lorem, ipsum dolor sit <span>amet</span> consectetur adipisicing elit. Earum, eveniet rerum. Consequuntur nihil impedit sequi quibusdam quia sapiente excepturi earum at! Ipsam maiores voluptatem voluptatum in possimus veritatis repellat excepturi.
+    </section>
+    <article>
+        ARTICLE
+        <hr>
+        Lorem ipsum dolor sit <span>amet</span> consectetur adipisicing elit. Assumenda eligendi, illo blanditiis nam aut quas velit expedita officia aspernatur qui vel placeat magni? Reprehenderit, tenetur mollitia odit itaque praesentium omnis.
+    </article>
+</body>
+</html>

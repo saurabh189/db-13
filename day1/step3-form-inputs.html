@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input</title>
+    <script>
+        function callFun(source, target){
+            document.getElementById(target).value = source.value;
+        }
+    </script>
+</head>
+<body>
+    <form action="#" method="get">
+        <table>
+            <thead>
+                <tr>
+                    <th>Sl #</th>
+                    <th>Type</th>
+                    <th>As Seen on Browser</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Text</td>
+                    <td> <input name="text" oninput="callFun(this,'output_text')" type="text"> </td>
+                    <td> <output id="output_text">placeholder</output> </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Search</td>
+                    <td> <input name="search" oninput="callFun(this,'output_search')" type="search"> </td>
+                    <td> <output id="output_search">placeholder</output> </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Color</td>
+                    <td> <input name="color" oninput="callFun(this,'output_color')" type="color"> </td>
+                    <td> <output id="output_color">placeholder</output> </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Range</td>
+                    <td> <input name="range" oninput="callFun(this,'output_range')" type="range"> </td>
+                    <td> <output id="output_range">placeholder</output> </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Time</td>
+                    <td> <input name="time" oninput="callFun(this,'output_time')" type="time"> </td>
+                    <td> <output id="output_time">placeholder</output> </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Date</td>
+                    <td> <input name="date" oninput="callFun(this,'output_date')" type="date"> </td>
+                    <td> <output id="output_date">placeholder</output> </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Date & Time</td>
+                    <td> <input name="datetime" oninput="callFun(this,'output_datetime')" type="datetime-local"> </td>
+                    <td> <output id="output_datetime">placeholder</output> </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Week</td>
+                    <td> <input name="week" oninput="callFun(this,'output_week')" type="week"> </td>
+                    <td> <output id="output_week">placeholder</output> </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Month</td>
+                    <td> <input name="month" oninput="callFun(this,'output_month')" type="month"> </td>
+                    <td> <output id="output_month">placeholder</output> </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>eMail</td>
+                    <td> <input autofocus required name="email" oninput="callFun(this,'output_email')" type="email"> </td>
+                    <td> <output id="output_email">placeholder</output> </td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>URL</td>
+                    <td> <input name="url" oninput="callFun(this,'output_url')" type="url"> </td>
+                    <td> <output id="output_url">placeholder</output> </td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td><label for="age">Number</label></td>
+                    <td> <input id="age" name="number" oninput="callFun(this,'output_number')" type="number"> </td>
+                    <td> <output id="output_number">placeholder</output> </td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td><label for="dbradio">Radio</label></td>
+                    <td> <input id="dbradio" name="radio" value="radio-selected" oninput="callFun(this,'output_radio')" type="radio"> </td>
+                    <td> <output id="output_radio">placeholder</output> </td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="submit">Create User Info</button>
+    </form>
+</body>
+</html>

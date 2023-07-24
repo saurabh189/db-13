@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* Element / Tag Selector */
+        /* body{
+            width: 500px;
+        } */
+        div{
+            background-color: crimson;
+        }
+        /* Class Selector */
+        .box{
+            background-color: darkorange;
+        }
+        /* Id Selector */
+        #db{
+            background-color: aqua;
+        }
+        /* 
+        .photo{
+            box-shadow: 10px 10px 10px black;
+        }
+        .female{
+            border : 5px dotted red;
+        } 
+        */
+       /*  
+        img[class]{
+            border: 10px dashed blueviolet;
+        } 
+        img[alt="batman"]{
+            border: 10px dashed blueviolet;
+        } 
+        */
+        /* 
+        img[alt ^= "d"]{
+            border: 10px dashed blueviolet;
+        }  
+        */
+        /* 
+        img[alt $= "man"]{
+            border: 10px dashed blueviolet;
+        }  
+        */ 
+        img[alt *= "r"]{
+            border: 10px dashed blueviolet;
+        }  
+        </style>
+</head>
+<body>
+    <div>
+        First
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus non dolorum odit, amet consequuntur obcaecati mollitia officiis, fugiat, doloremque sapiente placeat sit! Consectetur, magni culpa? Omnis qui adipisci delectus perferendis.
+    </div>
+    <div class="box">
+        Second
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus non dolorum odit, amet consequuntur obcaecati mollitia officiis, fugiat, doloremque sapiente placeat sit! Consectetur, magni culpa? Omnis qui adipisci delectus perferendis.
+    </div>
+    <div id="db">
+        Third
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus non dolorum odit, amet consequuntur obcaecati mollitia officiis, fugiat, doloremque sapiente placeat sit! Consectetur, magni culpa? Omnis qui adipisci delectus perferendis.
+    </div>
+    <div class="box">
+        Fourth
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus non dolorum odit, amet consequuntur obcaecati mollitia officiis, fugiat, doloremque sapiente placeat sit! Consectetur, magni culpa? Omnis qui adipisci delectus perferendis.
+    </div>
+    <hr>
+    <img src="images/antman.jpg"        alt="antman"            width="100" class="photo" >
+    <img src="images/batman.jpg"        alt="batman"            width="100" class="photo" >
+    <img src="images/rajani.jpg"        alt="rajani"            width="100" class="photo" >
+    <img src="images/deadpool.jpg"      alt="deadpool"          width="100" class="photo" >
+    <img src="images/ironman.jpg"       alt="ironman"           width="100" class="photo" >
+    <img src="images/superman.jpg"      alt="superman"          width="100" class="photo" >
+    <img src="images/spiderman.jpg"     alt="spiderman"         width="100" class="photo" >
+    <img src="images/phantom.jpg"       alt="phantom"           width="100" class="photo" >
+    <img src="images/robin.jpg"         alt="robin"             width="100"  >
+    <img src="images/doctorstrange.jpg" alt="doctorstrange"     width="100" class="photo" >
+    <img src="images/blackwidow.jpg"    alt="blackwidow"        width="100" class="photo female">
+    <img src="images/supergirl.jpg"     alt="supergirl"         width="100" class="photo female">
+    <img src="images/blackpanther.jpg"  alt="blackpanther"      width="100" class="photo" >
+</body>
+</html>
