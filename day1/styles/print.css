@@ -1,0 +1,17 @@
+.container{
+    border: 2px solid black;
+    margin: auto;
+    height: 300px;
+    display: flex;
+}       
+div[class^="box"]{
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    flex-shrink: 0;
+}

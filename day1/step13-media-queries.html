@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+    <style>
+        @import url("styles/default.css");
+    </style> 
+    -->
+    <!-- <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" media="print"  href="styles/print.css"> -->
+   <!--  <link rel="stylesheet" media="screen and (max-width:1000px)"  href="styles/1000.css"> -->
+   <!--  <style media="screen and (max-width:1000px)">
+        @import url('styles/1000.css');
+    </style> -->
+    <!-- <style>
+        @media screen and (max-width:1000px) {
+            .container{
+                background-color: darkslategray;
+                margin: auto;
+                height: 300px;
+                display: flex;
+            }       
+            div[class^="box"]{
+                width: 100px;
+                height: 100px;
+                text-align: center;
+                line-height: 100px;
+                font-family: sans-serif;
+                font-weight: bold;
+                color: antiquewhite;
+                flex-shrink: 0;
+                background-color: grey;
+            }
+            .box.box1{
+                background-color: #F72585;
+            }
+            .box.box2{
+                background-color: #F72585;
+            }
+
+        }
+    </style> -->
+    <link rel="stylesheet" media="screen and (orientation:portrait)"  href="styles/portrait.css">
+    <link rel="stylesheet" media="screen and (orientation:landscape)" href="styles/landscape.css">
+    <script>
+        document.addEventListener("DOMContentLoaded",function(){
+            setInterval(function(){
+                document.getElementById("log").innerText = window.innerWidth+"px";
+            },100)
+        })
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+        <div class="box box5">Box 5</div>
+        <div class="box box6">Box 6</div>
+        <div class="box box7">Box 7</div>
+        <div class="box box8">Box 8</div>
+        <div class="box box9">Box 9</div>
+        <div class="box box10">Box 10</div>
+    </div>
+    <hr>
+    <h1 id="log"></h1>
+</body>
+</html>

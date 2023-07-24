@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        li{
+            border: 4px solid red;
+        } 
+        */
+       /*  
+       .box > li{
+            border: 4px solid red;
+        } 
+        */
+        /* 
+        ul ~ li {
+            border: 4px solid red;
+        } 
+        */
+       /*  ul ~ li {
+            border: 4px solid red;
+        } */
+        body > li:not(ul~li){
+            border: 4px solid red;
+        }
+    </style>
+</head>
+<body>
+    <li>List Item out side</li>
+    <li>List Item out side</li>
+    <ul class="box">
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>
+            <ol>
+                <li>Nested List Item 1</li>
+                <li>Nested List Item 2</li>
+                <li>
+                    <ul>
+                        <li>Deep Nested Item 1</li>
+                        <li>Deep Nested Item 2</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+        <li>List Item 4</li>
+        <li>List Item 5</li>
+    </ul>
+    <li>List Item after</li>
+    <li>List Item after</li>
+    <li>List Item after</li>
+</body>
+</html>

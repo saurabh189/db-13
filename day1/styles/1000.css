@@ -1,0 +1,20 @@
+.container{
+    background-color: darkslategray;
+    margin: auto;
+    height: 300px;
+    display: flex;
+}       
+div[class^="box"]{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: antiquewhite;
+    flex-shrink: 0;
+    background-color: grey;
+}
+.box.box1, .box.box2{
+    background-color: #F72585;
+}

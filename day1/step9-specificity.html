@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* specificity value is 33 */
+        html body div[class].x.y{
+            background-color: chocolate;
+        }
+        html body div.x.y{
+            background-color: crimson;
+        }
+        body div.x.y{
+            background-color: aqua;
+        }
+        div.x.y{
+            background-color: mediumvioletred;
+        }
+        div.x{
+            background-color: darkorange !important;
+        }
+        div.x{
+            background-color: darkolivegreen;
+            color: beige;
+            font-family: sans-serif;
+            padding: 10px;
+            margin: 10px;
+        }
+        /*  
+        Element Selector : 1
+        Class Selector : 10
+        Id Selector : 100
+        inline Style : 1000
+        */
+    </style>
+</head>
+<body>
+    <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa tempora sunt est, aperiam dolorum delectus nihil eveniet consectetur maxime ipsum possimus facilis amet nostrum deserunt itaque animi debitis doloremque laboriosam.
+    </div>
+    <div class="x y" style="background-color: violet;">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa tempora sunt est, aperiam dolorum delectus nihil eveniet consectetur maxime ipsum possimus facilis amet nostrum deserunt itaque animi debitis doloremque laboriosam.
+    </div>
+    <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa tempora sunt est, aperiam dolorum delectus nihil eveniet consectetur maxime ipsum possimus facilis amet nostrum deserunt itaque animi debitis doloremque laboriosam.
+    </div>
+    <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa tempora sunt est, aperiam dolorum delectus nihil eveniet consectetur maxime ipsum possimus facilis amet nostrum deserunt itaque animi debitis doloremque laboriosam.
+    </div>
+    <div class="x">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa tempora sunt est, aperiam dolorum delectus nihil eveniet consectetur maxime ipsum possimus facilis amet nostrum deserunt itaque animi debitis doloremque laboriosam.
+    </div>
+</body>
+</html>
